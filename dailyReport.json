@@ -1,0 +1,18 @@
+{	
+	"day":"monday",
+	"custID": "12342", 
+	"trips":[
+			{
+			"startPlace":[-12.45364,10.24675],
+			"startTime":100756,
+			"stopPlace":[-12.45435,10.24131],
+			"stopTime":101521
+			},
+			{
+			"startPlace":[-12.45435,10.24131],
+			"startTime":151022, 
+			"startPlace":[-12.45364,10.24675],
+			"stopTime":152131
+			}
+		]
+	}

@@ -1,0 +1,74 @@
+{	
+	"12342":{
+	"monday": [],
+	"tuesday": [],
+	"wednesday":[
+			{
+			"startPlace":[-12.45352,10.24535],
+			"startTime" : 1004,
+			"stopPlace":[-12.45435,10.24111],
+			"stopTime":1010
+			},
+			{
+			"startPlace":[-12.45435,10.24111],
+			"startTime":1506, 
+			"stopPlace":[-12.45352,10.245335],
+			"stopTime":1522
+			}
+		],
+	"thursday":[
+			
+			{
+			"startPlace":[-12.45352,10.24535],
+			"startTime":1004,
+			"stopPlace":[-12.45435,10.24111],
+			"stopTime":1010
+			},
+			{
+			"startPlace":[-12.45435,10.24111],
+			"startTime":1506, 
+			"stopPlace":[-12.45352,10.245335],
+			"stopTime":1522
+			}
+		],
+	"friday": [],
+	"saturday": [],
+	"sunday": []
+	},
+	"33333":{
+	"monday": [],
+	"tuesday": [],
+	"wednesday":[
+			{
+			"startPlace":[-12.45352,10.24535],
+			"startTime" : 1004,
+			"stopPlace":[-12.45435,10.24111],
+			"stopTime":1010
+			},
+			{
+			"startPlace":[-12.45435,10.24111],
+			"startTime":1506, 
+			"stopPlace":[-12.45352,10.245335],
+			"stopTime":1522
+			}
+		],
+	"thursday":[
+			
+			{
+			"startPlace":[-12.45352,10.24535],
+			"startTime":1004,
+			"stopPlace":[-12.45435,10.24111],
+			"stopTime":1010
+			},
+			{
+			"startPlace":[-12.45435,10.24111],
+			"startTime":1506, 
+			"stopPlace":[-12.45352,10.245335],
+			"stopTime":1522
+			}
+		],
+	"friday": [],
+	"saturday": [],
+	"sunday": []
+	}
+}
