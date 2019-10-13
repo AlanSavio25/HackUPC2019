@@ -59,8 +59,6 @@ def matchingEndTime(driver,passenger):
 def updateTravelBuddy():
     with open('customerData.json') as f:
         customerData = json.load(f)
-	with open('profile.json') as f:
-        customerProfile = json.load(f)
 
         with open('travelBuddy.json') as e:
             travelBuddy = json.load(e)
@@ -70,11 +68,10 @@ def updateTravelBuddy():
                     for passenger in customerData.keys():
                         for trip2 in customerData[passenger][day]:
                             if(close(trip["stopPlace"],trip2["stopPlace"]) and matchingEndTime (trip["stopTime"],trip2["stopTime"]) and (driver!=passenger)):
-                            	delay = timeDifference(trip['startPlace'][0], trip['startPlace'][1], trip['stopPlace'][0], trip['stopPlace'][1])
-                                #print("delay is: " + str(delay))
-                               	if delay<=25:
-									isFriends = ([driver,passenger] in customerProfile["friendlist"]) or ([passenger, driver] in customerProfile["friendlist"])
-                                    travelBuddy[day].append({"driver":driver,"passenger":passenger, "destTime":int(trip["stopTime"]), "destLoc": trip["stopPlace"], "delay": delay, "passName": customerProfile[passenger], "isFriend": isFriends})
+                                delay = timeDifference(trip['startPlace'][0], trip['startPlace'][1], trip['stopPlace'][0], trip['stopPlace'][1])
+                                print("delay is: " + str(delay))
+                                if delay<=25:
+                                    travelBuddy[day].append({"driver":driver,"passenger":passenger, "destTime":int(trip["stopTime"]), "destLoc": trip["stopPlace"], "delay": delay})
 
         with open('travelBuddy.json', 'w') as f:
             json.dump(travelBuddy, f)
